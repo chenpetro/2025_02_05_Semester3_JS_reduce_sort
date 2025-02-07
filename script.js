@@ -81,14 +81,22 @@
 
 // 4 Відсортувати масив об'єктів за алфавітом в полі name:
 
-const arr = [
-    { name: 'John', age: 32 },
-    { name: 'Jane', age: 26 },
-    { name: 'Mike', age: 42 },
-    { name: 'Emily', age: 29 }
-  ];
+// const arr = [
+//     { name: 'John', age: 32 },
+//     { name: 'Jane', age: 26 },
+//     { name: 'Mike', age: 42 },
+//     { name: 'Emily', age: 29 }
+//   ];
 
-  arr.sort(function(a,b){
-    return a.name.localeCompare(b.name);
-  })
-  console.log(arr);
+//   arr.sort(function(a,b){
+//     return a.name.localeCompare(b.name);
+//   })
+//   console.log(arr);
+
+
+////////////////////////////////////////////////////////////////////
+
+
+import{ nameUser } from './functions/functions.js'
+const greet = document.getElementById('greet')
+greet.addEventListener('click', nameUser)
